@@ -5,21 +5,21 @@
 class Cflcli < Formula
   desc "Confluence CLI for managing pages with local Markdown files"
   homepage "https://github.com/takymt/cflcli"
-  version "0.2.1"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/takymt/cflcli/releases/download/v0.2.1/cfl_0.2.1_darwin_amd64.tar.gz"
-      sha256 "ac9c70c3cb3ba53165e127d055de5ddefc90a093c9804986b8f08c7ac45bb729"
+      url "https://github.com/takymt/cflcli/releases/download/v0.3.0/cfl_0.3.0_darwin_amd64.tar.gz"
+      sha256 "f0cd1a8a6a9e150838cb57a967a6add1719aa7776b5bd0f9516f139734b5759c"
 
       def install
         bin.install "cfl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/takymt/cflcli/releases/download/v0.2.1/cfl_0.2.1_darwin_arm64.tar.gz"
-      sha256 "5716f25495dab3458abf3abb1a62fe804309f723ca1d42800ab87b6163b0797e"
+      url "https://github.com/takymt/cflcli/releases/download/v0.3.0/cfl_0.3.0_darwin_arm64.tar.gz"
+      sha256 "cd6dc8f25d5b9a9bf8e5ea60b7d7b7f328c7547fc6d030ce1b70ecc9f51587b2"
 
       def install
         bin.install "cfl"
@@ -29,15 +29,15 @@ class Cflcli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/takymt/cflcli/releases/download/v0.2.1/cfl_0.2.1_linux_amd64.tar.gz"
-      sha256 "880e349eac29cdbb40700600374df787a1961a23d4e3c1eeefa2255b00e1c335"
+      url "https://github.com/takymt/cflcli/releases/download/v0.3.0/cfl_0.3.0_linux_amd64.tar.gz"
+      sha256 "f79f1fd73edffce51086042a74770c24c11e03192148743e96db779c27a38529"
       def install
         bin.install "cfl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/takymt/cflcli/releases/download/v0.2.1/cfl_0.2.1_linux_arm64.tar.gz"
-      sha256 "f8e368107c8f889adf4cf21395d5af75ff6fcb5f29d6094f3c4750dc3404d38c"
+      url "https://github.com/takymt/cflcli/releases/download/v0.3.0/cfl_0.3.0_linux_arm64.tar.gz"
+      sha256 "d2fbd56eee251554ac594af6235d7716e431aea45bd211c065bd177c0d3a2556"
       def install
         bin.install "cfl"
       end
